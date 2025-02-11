@@ -1,0 +1,38 @@
+@layer theme, base, components, utilities;
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-thin-chubby/css/uicons-thin-chubby.css');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Raleway:wght@100;300;400;500;600;700;800&display=swap');
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+  font-family: 'Comfortaa', sans-serif;
+  color: black;
+}
+.img{
+  width: -webkit-fill-available;
+  /* height: 200px; */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
